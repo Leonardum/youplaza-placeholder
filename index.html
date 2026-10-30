@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouPlaza — Coming soon</title>
+  <meta name="description" content="YouPlaza: curated, best-value products for your home, your pet and your active life. Shipped from EU warehouses. Coming soon.">
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --text: #1f2328;
+      --muted: #5f6670;
+      --accent: #2f6f5e;
+      --card: #ffffff;
+      --border: #e7e2da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #15181c;
+        --text: #eceae6;
+        --muted: #a3a9b1;
+        --accent: #6fbfa8;
+        --card: #1d2126;
+        --border: #2c3138;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 64px 16px;
+    }
+    .logo {
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin: 0;
+    }
+    .logo span { color: var(--accent); }
+    .tagline {
+      font-size: clamp(1.1rem, 3vw, 1.35rem);
+      color: var(--muted);
+      margin: 8px 0 40px;
+    }
+    .sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .section strong { display: block; font-size: 1.05rem; }
+    .section small { color: var(--muted); }
+    .soon {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 20px 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 class="logo">you<span>plaza</span></h1>
+    <p class="tagline">Curated, best-value products for you, your home and your pet. Shipped from EU warehouses.</p>
+
+    <div class="sections">
+      <div class="section"><strong>Home</strong><small>Organization &amp; decor</small></div>
+      <div class="section"><strong>Pets</strong><small>Accessories for dogs &amp; cats</small></div>
+      <div class="section"><strong>Active</strong><small>Fitness &amp; yoga essentials</small></div>
+    </div>
+
+    <span class="soon">Coming soon</span>
+  </main>
+
+  <footer>
+    <!-- TODO: fill in the company details (required on Belgian company websites) -->
+    [COMPANY NAME] [LEGAL FORM] · [REGISTERED OFFICE ADDRESS] · Enterprise no. [BE 0XXX.XXX.XXX] · RLE [COURT]
+  </footer>
+</body>
+</html>
